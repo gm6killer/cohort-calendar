@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
-<head th:replace="fragments :: head"></head>
+<head th:replace="fragments :: head">
 <title>Cohorts</title>
+</head>
 <body>
 <nav th:replace="fragments :: navbar"></nav>
 <h1>Add a new cohorts</h1>
@@ -22,6 +23,8 @@
         <select th:field="*{programType}" class="form-control" id="programType-field">
             <option value="Full-Stack Web Dev - Java">Full-Stack Web Development</option>
             <option value="Data Science">Data Science</option>
+            <option value="Systems Engineering">Systems Engineering</option>
+            <option value="IT Fundamentals">IT Fundamentals</option>
             <option value="New Program">New Program</option>
 
         </select>
